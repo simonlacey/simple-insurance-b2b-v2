@@ -32,7 +32,7 @@ p {
   color: #6c7279;*/
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  color: #475d69;
+  color: #6c7279;
   font-weight: 300;
   line-height: 24px;
 }
@@ -316,7 +316,6 @@ ul li {
   text-align: left;}
   .banner-text h1 {
     color: #1e96cf;
-    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     }
@@ -326,6 +325,58 @@ ul li {
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 40px; }
+
+
+/* ==========================================================================
+  $Value
+========================================================================== */
+
+.value {
+  background-color: #f7f7f7;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+
+/* ==========================================================================
+  $Father Daughter
+========================================================================== */
+.father-daughter-header {
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.father-daughter-sub-header {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.father-daughter-body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.father-daughter {
+  position: relative;
+  z-index: 1;
+  background-color: #1e96cf;
+  color: #ffffff;
+  padding: 20px;
+  max-height: 460px;
+}
+
+img.father-daughter {
+  position: absolute;
+  z-index: 9999;
+  background-color: transparent;
+  margin-top: -80px;
+}
+
+
 
 /* ==========================================================================
 	$Features
