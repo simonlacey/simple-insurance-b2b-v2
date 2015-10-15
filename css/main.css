@@ -93,10 +93,10 @@ ul li {
   z-index: 999; }
   #header .header-content {
     background-color: #ffffff;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 4px solid rgba(30, 169, 230, 1.0);
     margin: 0 auto;
     /* max-width: 1170px; */
-    padding: 10px 0;
+    padding: 15px 5%;
     width: 100%;
     -moz-transition: padding 0.3s;
     -o-transition: padding 0.3s;
@@ -123,17 +123,19 @@ ul li {
   transition: opacity 0.5s; }
 
 .navigation {
-  float: right; }
+  float: right;
+  margin-top: 25px; }
   .navigation li {
     display: inline-block; }
   .navigation a {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 13px;
-    font-weight: 700;
-    margin-left: 40px;
-    text-transform: uppercase; }
+    color: #1e96cf;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 30px;
+    text-transform: uppercase;
+    }
     .navigation a:hover, .navigation a.active {
-      color: #fff; }
+      color: #fda738; }
 
 .nav-toggle {
   display: none;
@@ -262,19 +264,19 @@ ul li {
 	$Banner
 ========================================================================== */
 .banner {
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images/hero.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  min-height: 750px; }
+  min-height: 560px; }
 
 .banner-text {
   padding-top: 25%; }
   .banner-text h1 {
-    color: #fff;
+    color: #1e96cf;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase; }
