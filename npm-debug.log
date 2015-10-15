@@ -1,0 +1,23 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/4.2.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'grunt-cli' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose stack Error: EEXIST: file already exists, mkdir '/usr/local/bin/node'
+4 verbose stack     at Error (native)
+5 verbose cwd /Users/simonlacey/Documents/localSites/git/simple-insurance-b2b-v2
+6 error Darwin 14.5.0
+7 error argv "/usr/local/Cellar/node/4.2.1/bin/node" "/usr/local/bin/npm" "install" "-g" "grunt-cli"
+8 error node v4.2.1
+9 error npm  v2.14.7
+10 error path /usr/local/bin/node
+11 error code EEXIST
+12 error errno -17
+13 error syscall mkdir
+14 error EEXIST: file already exists, mkdir '/usr/local/bin/node'
+File exists: /usr/local/bin/node
+Move it away, and try again.
+15 verbose exit [ -17, true ]

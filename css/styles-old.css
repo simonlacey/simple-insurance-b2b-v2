@@ -1,0 +1,591 @@
+/*** ----------------
+  Typography
+---------------- ***/
+
+/* global website fonts */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #475d69;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "proxima-nova-soft",sans-serif;
+    font-weight: 400;
+}
+
+/* fonts */
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 28px;
+    color: #1e96cf;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 24px;
+    color: #1e96cf;
+    line-height: 40px;
+}
+
+/* insurance global styles - start */
+
+.insurance-sub {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.insurance-sub-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.insurance-body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* insurance global styles - end */
+/* todo change id to class per css lint */
+#explore-site-list-left {
+    margin-left: -50px;
+}
+
+.footer-header {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+/* footer text underlines */
+
+.footer-header-underlines {
+    border-bottom: 2px solid #e54d42;
+    position: relative;
+    width: 70%;
+}
+
+.footer-header-underlines:after {
+    position: absolute;
+    left: 18%;
+    right: 0;
+    bottom: -2px;
+    border-bottom: 2px solid #818991;
+    content: '';
+}
+
+p.hero-header {
+    font-family: "proxima-nova-soft",sans-serif;
+    font-size: 86px;
+    font-weight: 700;
+    color: #1ea9e6;
+    line-height: 56px;
+    margin-top: 24px;
+    margin-left: -10px;
+    text-shadow: 4px 4px 10px rgba(255,255,255,0.55);
+}
+
+p.hero-sub-header {
+    font-family: "proxima-nova-soft",sans-serif;
+    font-size: 20px;
+    color: #475d69;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+p.hero-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #475d69;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 28px;
+}
+
+p.relationships {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 20px;
+}
+
+p.father-daughter-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+p.father-daughter-sub-header {
+    font-family: "proxima-nova-soft",sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+p.father-daughter-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+p.advantages-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+p.work-with-simple-header {
+    font-family: "Open Sans",sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 28px;
+    color: #1a6c94;
+}
+
+p.work-with-simple-sub-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+a#learn-more {
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+a#learn-more:hover {
+    color: #fda738;
+}
+
+/*** ----------------
+  Layout
+---------------- ***/
+
+.hero-btn {
+    font-family: "proxima-nova-soft",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #3cc85b;
+    color: #ffffff;
+    padding: 10px 40px;
+    border: none;
+}
+
+.hero-btn:hover {
+    background-color: #1e96cf;
+    color: #ffffff;
+}
+
+.cta-btn {
+    font-family: "proxima-nova-soft",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #fda738;
+    color: #ffffff;
+    padding: 10px 60px;
+    border: none;
+    margin: 10px 0;
+}
+
+.cta-btn:hover {
+    background-color: #3cc85b;
+    color: #ffffff;
+}
+
+.glyphicon.glyphicon-play, .glyphicon.glyphicon-triangle-right {
+    font-size: 14px;
+
+}
+
+/*** ----------------
+  Jumbotron
+---------------- ***/
+
+.jumbotron {
+    position: relative;
+    background: #ccc url("../imgs/hero.jpg") center center;
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*** ----------------
+  Navbar
+---------------- ***/
+
+.navbar {
+    background-color: #ffffff;
+    height: 80px;
+    margin-bottom: 0px;
+    border-top: 4px solid #1e96cf;
+}
+
+li {
+    list-style: none;
+}
+
+#search-icon {
+    margin-left: 6px;
+}
+
+/* navbar colors */
+
+.navbar-nav a {
+    margin-top: 15px;
+    color: #1e96cf;
+}
+
+/* not using atm
+.navbar-form {
+    margin-top: 25px;
+} */
+
+.navbar-nav > li > a:link {
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 10px;
+}
+
+#nav-phone {
+     color: #475d69;
+ }
+
+.navbar .nav > li > a {
+    color:  #1e96cf;
+}
+
+.navbar .nav > li > a:hover {
+    color: #fda738;
+}
+
+.navbar-icons {
+    position: relative;
+    float: right;
+    margin-top: 5%;
+    font-size: 20px;
+    color: #1e96cf;
+    margin-left: 10px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #1e96cf;
+    border-color: #1e96cf;
+    margin-top: 20px;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+/* - fixes not working yet
+
+*** hamburger icon hover state
+.navbar-default .navbar-toggle-hover-bg {
+    background-color: #1e96cf;
+}
+
+*** vertically align navbar icons using % instead of px
+.navbar-icons {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}*/
+
+/* - navbar shadow - */
+
+#custom-navbar {
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(36,73,87,0.4);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(36,73,87,0.4);
+    box-shadow: 0px 1px 1px 0px rgba(36,73,87,0.4);
+    z-index:999;
+}
+
+/*** ----------------
+  Images
+---------------- ***/
+
+.logo {
+    height: 50px;
+    margin-top: 15px;
+}
+
+/*** ----------------
+  Containers
+---------------- ***/
+
+/* - value - */
+
+.value {
+    background-color: #f7f7f7;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+
+/* ------ father daughter ------ */
+.father-daughter {
+    position: relative;
+    z-index: 1;
+    background-color: #1e96cf;
+    color: #ffffff;
+    padding: 20px;
+    min-height: 460px;
+}
+
+img.father-daughter {
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    margin-top: -80px;
+}
+
+/* ------ advantages ------ */
+.advantages {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+img.advantages-imgs {
+    position: relative;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    height: 180px;
+    left: 0;
+    right: 0;
+}
+
+.work-with-simple {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* cleancode INSURANCE SECTION needs optimized code */
+
+/* ------ insurance section start ------ */
+.insurance {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-align: left;
+}
+
+.insurance-title {
+    font-family: "proxima-nova-soft", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.insurance-sub {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.insurance-link {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.insurance-link:hover {
+    color: #e3b11c;
+}
+
+.insurance-body {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 20px;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.insurance-body:hover, .insurance-body:focus {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -webkit-transform: translateY(-10px);
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.health-insurance {
+    background-color: #3a99d9;
+    /* background: #ccc url("../imgs/12.jpg") center center; */
+    height: 240px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #ccc url("../imgs/12.jpg") center center;
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dental-insurance {
+    background-color: #9a5cb4;
+    height: 200px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.life-insurance {
+    background-color: #38cb74;
+    height: 100px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.auto-insurance {
+    background-color: #f0c330;
+    height: 100px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.medicare {
+    background-color: #e47e30;
+    height: 100px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.home-insurance {
+    background-color: #e54d42;
+    height: 100px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.resources {
+    background-color: #204d74;
+    color: #fff;
+    padding: 0;
+}
+
+.bpo {
+    background-color: #4a6577;
+    height: 400px;
+}
+.tech {
+    background-color: #235c82;
+    height:400px;
+}
+
+/*** ----------------
+  Footer
+---------------- ***/
+
+.footer {
+    background-color: #626b76;
+    color: #fff;
+    padding-top: 30px;
+    height: 320px;
+}
+
+.copyright {
+    font-size: 11px;
+    font-weight: 300;
+    color: #9ea7ad;
+    background-color: #5c656f;
+    height: 60px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** ----------------
+  todo Delete before deployment
+---------------- ***/
+
+/* 3d settings i like
+    text-shadow: 0 4px 0 #1c729f,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+*/
+
+/* gives text a 3d look - works great
+.text-3d {
+    color: #17638A;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #17638A,
+    0 3px 0 #17638A,
+    0 4px 0 #17638A,
+    0 5px 0 #17638A,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+} */

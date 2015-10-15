@@ -1,12 +1,45 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
-@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
+/* @import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Cardo:400,400italic,700); */
+
+/* ==========================================================================
+Typography for this website
+
+All headers uses proxima nova soft
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "proxima-nova-soft",sans-serif;
+  font-weight: 400;
+}
+
+All body uses open sans
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #475d69;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+========================================================================== */
+
 /* ==========================================================================
 Typography
 ========================================================================== */
 p {
-  font-size: 14px;
+  /*font-size: 14px;
   line-height: 22.4px;
-  color: #6c7279; }
+  color: #6c7279;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #6c7279;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "proxima-nova-soft",sans-serif;
+}
 
 h1 {
   font-size: 65px;
@@ -90,19 +123,26 @@ ul li {
 #header {
   position: fixed;
   width: 100%;
-  z-index: 999; }
+  z-index: 999;
+  box-shadow: 0px 1px 1px 0px rgba(36,73,87,0.4); }
   #header .header-content {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #ffffff;
+    border-top: 4px solid rgba(30, 169, 230, 1.0);
     margin: 0 auto;
-    max-width: 1170px;
-    padding: 40px 0;
+    /* max-width: 1170px; */
+    padding: 8px 5%;
     width: 100%;
     -moz-transition: padding 0.3s;
     -o-transition: padding 0.3s;
     -webkit-transition: padding 0.3s;
     transition: padding 0.3s; }
   #header .logo {
+    height: 66px;
     float: left; }
+
+  .si-logo {
+    height: 66px;
+  }
 
 #header.fixed {
   background-color: #292c47; }
@@ -121,17 +161,19 @@ ul li {
   transition: opacity 0.5s; }
 
 .navigation {
-  float: right; }
+  float: right;
+  margin-top: 25px; }
   .navigation li {
     display: inline-block; }
   .navigation a {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 13px;
-    font-weight: 700;
-    margin-left: 40px;
-    text-transform: uppercase; }
+    color: #1e96cf;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 30px;
+    text-transform: uppercase;
+    }
     .navigation a:hover, .navigation a.active {
-      color: #fff; }
+      color: #fda738; }
 
 .nav-toggle {
   display: none;
@@ -260,28 +302,94 @@ ul li {
 	$Banner
 ========================================================================== */
 .banner {
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images/hero.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
-  min-height: 750px; }
+  min-height: 600px; }
 
 .banner-text {
-  padding-top: 25%; }
+  padding-top: 15%;
+  text-align: left;}
   .banner-text h1 {
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
+    color: #1e96cf;
     font-weight: 700;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    }
   .banner-text p {
-    color: #fff;
-    font-size: 22px;
+    color: #2f3c52;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
-    margin-bottom: 80px; }
+    margin-bottom: 40px; }
+
+/* ==========================================================================
+  $Banner
+========================================================================== */
+
+.about {
+  background-image: url(../images/about-us.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 460px; }
+
+/* ==========================================================================
+  $Value
+========================================================================== */
+
+.value {
+  background-color: #f7f7f7;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+
+/* ==========================================================================
+  $Father Daughter
+========================================================================== */
+.father-daughter-header {
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.father-daughter-sub-header {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.father-daughter-body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.father-daughter {
+  position: relative;
+  z-index: 1;
+  background-color: #1e96cf;
+  color: #ffffff;
+  padding: 20px;
+  max-height: 460px;
+}
+
+img.father-daughter {
+  position: absolute;
+  z-index: 9999;
+  background-color: transparent;
+  margin-top: -80px;
+}
+
+
 
 /* ==========================================================================
 	$Features
@@ -424,6 +532,9 @@ ul li {
 /* ==========================================================================
 	$Download
 ========================================================================== */
+.download {
+  background-color: #1a6c94;
+}
 .download h3 {
   margin-top: 0; }
 .download p {
