@@ -326,6 +326,19 @@ ul li {
     line-height: 1.5;
     margin-bottom: 40px; }
 
+/* ==========================================================================
+  $Banner
+========================================================================== */
+
+.about {
+  background-image: url(../images/about-us.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 460px; }
 
 /* ==========================================================================
   $Value
@@ -519,6 +532,9 @@ img.father-daughter {
 /* ==========================================================================
 	$Download
 ========================================================================== */
+.download {
+  background-color: #1a6c94;
+}
 .download h3 {
   margin-top: 0; }
 .download p {
